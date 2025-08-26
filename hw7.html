@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <style>
+    div {
+      width: 300px;
+      height: 150px;
+      background: orange;
+      margin: 20px auto;
+      text-align: center;
+      line-height: 150px;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+
+    div:fullscreen {
+      background: orange;
+      width: 100%;
+      height: 100%;
+      font-size: 40px;
+    }
+  </style>
 </head>
 <body>
-    <h1>ทำไม่เป็นนาาาาา</h1>
+  <p>Click the box below to enter fullscreen mode.</p>
+  <div id="box">Click Me</div>
+
+  <script>
+    const box = document.getElementById("box");
+    box.addEventListener("click", () => {
+      if (box.requestFullscreen) {
+        box.requestFullscreen();
+      }
+    });
+  </script>
 </body>
 </html>
