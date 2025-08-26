@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  body{
+    font-family: system-ui, sans-serif;
+    background:#f3f3f3;
+    padding:2rem;
+  }
+
+  .demo{
+    background:#fff; border:3px solid #ccc; padding:2rem; min-height:150px;
+  }
+
+  .cases{
+    display:flex; gap:2rem;
+    font-size:1.2rem; cursor:pointer;
+  }
+
+  .cases span{
+    transition:opacity .3s ease;
+  }
+
+  .cases:hover span{
+    opacity:.3;
+  }
+
+  .cases span:hover{
+    opacity:1;
+  }
+</style>
+</head>
+<body>
+  <h2>Preview:</h2>
+  <div class="demo">
+    <div class="cases">
+      <span>Case 1</span>
+      <span>Case 2</span>
+      <span>Case 3</span>
+    </div>
+  </div>
+</body>
+</html>

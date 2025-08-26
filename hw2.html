@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .preview {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .image-box {
+        position: relative;
+        display: inline-block;
+        border: 3px solid black;   
+      }
+
+      .image-box img {
+        display: block;
+        width: 300px;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        background-color: wheat; 
+        color: black;
+        padding: 30px 30px;
+        font-size: 24px;
+        border: 2px solid black;  
+        border-radius: 8px;        
+      }
+    </style>
+</head>
+<body>
+  <div class="preview">Preview:</div>
+  <div class="image-box">
+    <img src="flower.jpg" alt="Flower">
+    <div class="overlay">Hello, World</div>
+  </div>
+</body>
+</html>

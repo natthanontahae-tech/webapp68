@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .scroll-container {
+      display: flex;
+      overflow-y: auto;
+      border: 2px solid #ccc;
+      width: 600px;
+      height: 100px;
+    }
+
+    .item {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      margin: 5px;
+      width: 100px;
+      height: 120px;
+      border-radius: 8px;
+    }
+
+    .item img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Preview:</h2>
+  <div class="scroll-container">
+    <div class="item"><img src="https://picsum.photos/id/1011/200/200" alt=""></div>
+    <div class="item"><img src="https://picsum.photos/id/1015/200/200" alt=""></div>
+    <div class="item"><img src="https://picsum.photos/id/1025/200/200" alt=""></div>
+    <div class="item"><img src="https://picsum.photos/id/1035/200/200" alt=""></div>
+    <div class="item"><img src="https://picsum.photos/id/1045/200/200" alt=""></div>
+  </div>
+</body>
+</html>

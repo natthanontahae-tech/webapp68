@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    form {
+      border: 2px solid #ccc;
+      padding: 20px;
+      padding-left : 30px;
+      padding-right: 50px;
+      width: 500px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    form:focus-within {
+      border-color: #000000;
+      background-color: #f0f8ff;
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+    <h2>Preview:</h2>
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+  </form>
+</body>
+</html>
